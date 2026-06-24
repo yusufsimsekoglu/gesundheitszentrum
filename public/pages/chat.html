@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Termin online buchen – Gesundheitszentrum am Donaupark Deggendorf." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termin buchen | Gesundheitszentrum am Donaupark</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="chat-seite">
+
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="/"><span class="logo-kreuz">✚</span> Gesundheitszentrum</a>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+        <li><a href="/pages/leistungen.html">Leistungen</a></li>
+        <li><a href="/pages/faq.html">FAQ</a></li>
+        <li><a href="/pages/chat.html" class="nav-chat-link">Termin buchen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="chat-drawer-overlay" class="chat-drawer-overlay"></div>
+
+  <div class="chat-app">
+
+    <!-- Linkes Panel: Desktop-Sidebar + Mobil-Drawer -->
+    <aside class="chat-panel-links">
+      <div class="chat-panel-links-inhalt">
+
+        <!-- Nav-Links (nur im Mobil-Drawer sichtbar) -->
+        <nav class="chat-panel-nav">
+          <ul>
+            <li><a href="/">Startseite</a></li>
+            <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+            <li><a href="/pages/leistungen.html">Leistungen</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/chat.html" class="chat-panel-nav-cta">Termin buchen</a></li>
+          </ul>
+        </nav>
+        <div class="chat-panel-trenner chat-panel-trenner-nav"></div>
+
+        <div class="chat-panel-info">
+          <div class="chat-panel-info-zeile">
+            <span class="chat-panel-info-label">Adresse</span>
+            <p>Musterstraße 12<br>94469 Deggendorf</p>
+          </div>
+          <div class="chat-panel-info-zeile">
+            <span class="chat-panel-info-label">Öffnungszeiten</span>
+            <p>Mo – Fr &nbsp; 08:00 – 18:00</p>
+            <p class="chat-panel-info-sub">Sa & So geschlossen</p>
+          </div>
+          <div class="chat-panel-info-zeile">
+            <span class="chat-panel-info-label">Telefon</span>
+            <p><a href="tel:+499911234560">0991 123456</a></p>
+          </div>
+          <div class="chat-panel-info-zeile">
+            <span class="chat-panel-info-label">Fachbereiche</span>
+            <ul class="chat-panel-fb-liste">
+              <li>Allgemeinmedizin</li>
+              <li>Augenheilkunde</li>
+              <li>Dermatologie</li>
+              <li>Gynäkologie</li>
+              <li>Kardiologie</li>
+              <li>Neurologie</li>
+              <li>Orthopädie</li>
+              <li>Pädiatrie</li>
+              <li>Physiotherapie</li>
+              <li>Urologie</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chat-panel-unten">
+          <a href="/">← Zurück zur Startseite</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Rechter Chat-Bereich -->
+    <div class="chat-panel-rechts">
+      <div class="chat-topbar">
+        <div class="chat-topbar-info">
+          <div class="chat-topbar-avatar">GZ</div>
+          <div>
+            <div class="chat-topbar-name">Digitaler Assistent</div>
+            <div class="chat-topbar-status"><span class="status-dot"></span>Online · Antwortet sofort</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="chat-box" class="chat-box"></div>
+
+      <div class="chat-input-bereich">
+        <form id="chat-form" class="chat-form-neu">
+          <input
+            type="text"
+            id="nachricht-input"
+            placeholder="Schreiben Sie Ihre Nachricht …"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="chat-sende-button" aria-label="Senden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+        <p class="chat-input-hinweis">Termin buchen · Verschieben · Absagen · Informationen</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/cookie-banner.js"></script>
+</body>
+</html>

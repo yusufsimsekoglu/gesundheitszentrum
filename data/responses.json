@@ -1,0 +1,194 @@
+{
+  "begruessung": [
+    "Guten Tag! Ich bin Ihr digitaler Assistent des Gesundheitszentrums. Wie kann ich Ihnen helfen?",
+    "Herzlich willkommen im Gesundheitszentrum. Ich unterstütze Sie gerne bei Terminen und allgemeinen Fragen.",
+    "Hallo und willkommen! Ich helfe Ihnen bei Terminbuchungen, Änderungen, Absagen und allgemeinen Informationen.",
+    "Guten Tag! Was kann ich heute für Sie tun? Ich helfe Ihnen bei Terminen, Öffnungszeiten und weiteren Fragen.",
+    "Willkommen! Ich bin Ihr persönlicher Chatbot. Stellen Sie Ihre Frage – ich helfe Ihnen gerne weiter."
+  ],
+  "fallback": [
+    "Entschuldigung, ich habe Ihre Anfrage noch nicht eindeutig verstanden. Geht es um einen Termin oder um allgemeine Informationen?",
+    "Ich bin mir noch nicht ganz sicher, was Sie meinen. Möchten Sie einen Termin buchen, verschieben oder absagen?",
+    "Könnten Sie Ihre Anfrage bitte etwas genauer formulieren? Ich kann Ihnen bei Terminen und Kontaktinformationen helfen.",
+    "Das habe ich leider nicht verstanden. Darf ich fragen, worum es geht? Termin, Öffnungszeiten oder etwas anderes?",
+    "Ich konnte Ihre Nachricht nicht einordnen. Bitte beschreiben Sie kurz, womit ich Ihnen helfen soll."
+  ],
+  "wiederholung": [
+    "Diese Frage hatten Sie gerade schon gestellt – hier noch einmal die Antwort:",
+    "Gerne wiederhole ich es für Sie:",
+    "Wie eben schon erwähnt:",
+    "Kein Problem, hier ist die Information noch einmal:",
+    "Sie fragen ein zweites Mal – sehr gerne:",
+    "Nochmals für Sie:"
+  ],
+  "erweiterterFallback": {
+    "stufe2": "Ich habe Ihre Anfrage noch nicht eindeutig verstanden. Bitte formulieren Sie Ihre Frage direkt, zum Beispiel: 'Ich möchte einen Termin buchen' oder 'Wie lautet Ihre Adresse?'",
+    "stufe3": "Ich kann Ihnen gezielt bei diesen Themen helfen: Termin buchen, Termin verschieben, Termin absagen, Öffnungszeiten, Adresse oder Kontakt. Bitte wählen Sie jetzt genau eines dieser Themen."
+  },
+  "oeffnungszeiten": [
+    "Unsere Öffnungszeiten sind Montag bis Freitag von 08:00 bis 18:00 Uhr.",
+    "Das Gesundheitszentrum ist werktags von 08:00 bis 18:00 Uhr geöffnet.",
+    "Wir sind von Montag bis Freitag jeweils von 08:00 bis 18:00 Uhr für Sie da.",
+    "Das Zentrum öffnet montags bis freitags um 08:00 Uhr und schließt um 18:00 Uhr.",
+    "Unsere Sprechzeiten: Mo–Fr, 08:00–18:00 Uhr. Samstags und sonntags sind wir geschlossen."
+  ],
+  "adresse": [
+    "Unsere Adresse lautet: Musterstraße 12, 94469 Deggendorf.",
+    "Sie finden uns in der Musterstraße 12, 94469 Deggendorf.",
+    "Wir befinden uns in der Musterstraße 12 in 94469 Deggendorf.",
+    "Das Gesundheitszentrum ist unter der Adresse Musterstraße 12, 94469 Deggendorf zu finden."
+  ],
+  "kontakt": [
+    "Sie erreichen uns telefonisch unter 0991 123456 und per E-Mail unter kontakt@gesundzentrum.de.",
+    "Unsere Kontaktdaten sind: Telefon 0991 123456, E-Mail kontakt@gesundzentrum.de.",
+    "Rufen Sie uns gerne an: 0991 123456. Per E-Mail erreichen Sie uns unter kontakt@gesundzentrum.de.",
+    "Unser Team ist unter 0991 123456 erreichbar. Alternativ können Sie uns eine E-Mail an kontakt@gesundzentrum.de senden."
+  ],
+  "termine": {
+    "buchenStart": "Gerne helfe ich Ihnen bei einer Terminbuchung. Bitte nennen Sie mir zuerst den gewünschten Fachbereich.",
+    "ungueltigerFachbereich": "Dieser Fachbereich ist leider nicht verfügbar. Bitte wählen Sie aus: Allgemeinmedizin, Dermatologie, Kardiologie, Orthopädie, Physiotherapie, Neurologie, Pädiatrie, Gynäkologie, Urologie oder Augenheilkunde.",
+    "frageName": "Vielen Dank. Wie lautet Ihr vollständiger Name?",
+    "frageTelefon": "Und unter welcher Telefonnummer können wir Sie erreichen?",
+    "frageEmail": "Wie lautet Ihre E-Mail-Adresse?",
+    "frageDatum": "An welchem Datum wünschen Sie den Termin?",
+    "frageUhrzeit": "Welche Uhrzeit bevorzugen Sie?",
+    "ungueltigesDatum": "Bitte geben Sie das Datum in einem klaren Format an, zum Beispiel 15.07.2026, 15/07/2026 oder 15-07-2026.",
+    "vergangenesDatum": "Dieses Datum liegt in der Vergangenheit. Bitte wählen Sie ein zukünftiges Datum.",
+    "wochenendeDatum": "An Wochenenden sind wir leider geschlossen. Bitte wählen Sie einen Termin von Montag bis Freitag.",
+    "bereitsGebucht": "Mit dieser E-Mail-Adresse wurde vor Kurzem bereits ein Termin gebucht. Pro E-Mail-Adresse ist innerhalb von 24 Stunden nur eine Buchung möglich. Bitte versuchen Sie es später erneut.",
+    "ungueltigeUhrzeit": "Bitte geben Sie die Uhrzeit in einem klaren Format an, zum Beispiel 10:00, 10.30, 10 30 oder 1030.",
+    "ausserOeffnungszeiten": "Unsere Öffnungszeiten sind Montag bis Freitag von 08:00 bis 18:00 Uhr. Bitte wählen Sie eine Uhrzeit in diesem Zeitraum.",
+    "ungueltigeTelefon": "Bitte geben Sie eine gültige Telefonnummer ein, zum Beispiel 0991 123456 oder +49 991 123456.",
+    "ungueltigeEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein, zum Beispiel max.mustermann@email.de.",
+    "bestaetigungFrage": "Bitte bestätigen Sie, ob diese Angaben korrekt sind.",
+    "bestaetigungJa": "Ihr Termin wurde gebucht. Unsere Mitarbeiter werden sich schnellstmöglich mit Ihnen in Verbindung setzen und die endgültige Reservierung bestätigen.",
+    "bestaetigungJaMitName": "Vielen Dank, {name}! Ihr Termin wurde gebucht. Unsere Mitarbeiter werden sich schnellstmöglich mit Ihnen in Verbindung setzen und die endgültige Reservierung bestätigen.",
+    "fachbereichErkannt": "{fachbereich} – verstanden!",
+    "bestaetigungNein": "Kein Problem. Bitte starten Sie die Terminbuchung erneut, damit ich die Daten noch einmal aufnehmen kann.",
+    "bestaetigungUnklar": "Bitte antworten Sie mit Ja oder Nein, damit ich Ihre Angaben bestätigen kann.",
+    "ungueltigerName": "Bitte geben Sie Ihren vollständigen Namen ein, zum Beispiel Erika Mustermann.",
+    "slotBesetzt": "Dieser Termin ist leider bereits vergeben. Bitte wählen Sie eine andere Uhrzeit.",
+    "emailVerifizierungGesendet": "Ein 6-stelliger Bestätigungscode wurde an {email} gesendet. Bitte geben Sie den Code ein:",
+    "emailCodeFalsch": "Dieser Code ist leider nicht korrekt. Bitte versuchen Sie es erneut.",
+    "emailCodeAbgelaufen": "Der Code ist abgelaufen. Tippen Sie bitte 'Code neu senden', um einen neuen Code zu erhalten.",
+    "emailCodeNeusenden": "Ein neuer Code wurde an {email} gesendet.",
+    "emailCodeFehler": "Der Code konnte leider nicht gesendet werden. Bitte überprüfen Sie Ihre E-Mail-Adresse und versuchen Sie es erneut.",
+    "emailCodeMaxVersuche": "Zu viele Fehlversuche. Bitte starten Sie die Terminbuchung erneut."
+  },
+  "termineVerschieben": {
+    "verschiebenStart": "Ich helfe Ihnen gerne beim Verschieben Ihres Termins.",
+    "frageName": "Wie lautet Ihr vollständiger Name?",
+    "frageTelefon": "Unter welcher Telefonnummer sind Sie bei uns registriert?",
+    "frageAltesDatum": "An welchem Datum liegt Ihr bestehender Termin?",
+    "frageNeuesDatum": "Auf welches neue Datum möchten Sie den Termin verschieben?",
+    "frageNeueUhrzeit": "Und welche neue Uhrzeit wünschen Sie?",
+    "bestaetigungFrage": "Bitte bestätigen Sie: Sind diese Angaben korrekt?",
+    "bestaetigungJa": "Ihr Termin wurde erfolgreich verschoben. Unser Team meldet sich zur Bestätigung bei Ihnen.",
+    "bestaetigungJaMitName": "Erledigt, {name}! Ihr Termin wurde erfolgreich verschoben. Unser Team meldet sich zur Bestätigung bei Ihnen.",
+    "bestaetigungNein": "Kein Problem. Bitte starten Sie den Vorgang erneut, damit ich die Daten noch einmal aufnehmen kann.",
+    "bestaetigungUnklar": "Bitte antworten Sie mit Ja oder Nein.",
+    "ungueltigesDatum": "Bitte geben Sie das Datum in einem klaren Format an, zum Beispiel 15.07.2026.",
+    "ungueltigeUhrzeit": "Bitte geben Sie die Uhrzeit in einem klaren Format an, zum Beispiel 10:00 oder 1030.",
+    "ungueltigeTelefon": "Bitte geben Sie eine gültige Telefonnummer ein, zum Beispiel 0991 123456.",
+    "nichtGefunden": "Wir konnten keinen Termin mit diesen Angaben finden. Bitte überprüfen Sie Name und Datum.",
+    "slotBesetzt": "Dieser neue Termin ist leider bereits vergeben. Bitte wählen Sie eine andere Uhrzeit."
+  },
+  "termineAbsagen": {
+    "absagenStart": "Ich helfe Ihnen bei der Terminabsage.",
+    "frageName": "Wie lautet Ihr vollständiger Name?",
+    "frageTelefon": "Unter welcher Telefonnummer sind Sie bei uns registriert?",
+    "frageDatum": "An welchem Datum liegt der Termin, den Sie absagen möchten?",
+    "bestaetigungFrage": "Bitte bestätigen Sie: Sind diese Angaben korrekt?",
+    "bestaetigungJa": "Ihr Termin wurde erfolgreich abgesagt. Wir hoffen, Sie bald wieder begrüßen zu dürfen.",
+    "bestaetigungJaMitName": "Ihr Termin wurde erfolgreich abgesagt, {name}. Wir hoffen, Sie bald wieder begrüßen zu dürfen.",
+    "bestaetigungNein": "Kein Problem. Bitte starten Sie den Vorgang erneut, damit ich die richtigen Daten aufnehmen kann.",
+    "bestaetigungUnklar": "Bitte antworten Sie mit Ja oder Nein.",
+    "ungueltigesDatum": "Bitte geben Sie das Datum in einem klaren Format an, zum Beispiel 15.07.2026.",
+    "ungueltigeTelefon": "Bitte geben Sie eine gültige Telefonnummer ein, zum Beispiel 0991 123456.",
+    "nichtGefunden": "Wir konnten keinen Termin mit diesen Angaben finden. Bitte überprüfen Sie Name und Datum."
+  },
+  "begruessung_antwort": [
+    "Hallo! Wie kann ich Ihnen heute helfen?",
+    "Guten Tag! Was kann ich für Sie tun?",
+    "Herzlich willkommen! Womit darf ich Ihnen helfen?",
+    "Hallo! Ich helfe Ihnen gerne bei Terminen oder allgemeinen Fragen."
+  ],
+  "danke_antwort": [
+    "Gerne! Kann ich Ihnen noch mit etwas helfen?",
+    "Sehr gerne! Haben Sie noch weitere Fragen?",
+    "Kein Problem! Ich bin jederzeit für Sie da.",
+    "Gern geschehen! Gibt es noch etwas, womit ich helfen kann?"
+  ],
+  "befinden_antwort": [
+    "Mir geht es gut, vielen Dank der Nachfrage! Wie kann ich Ihnen heute helfen?",
+    "Danke, alles bestens! Womit darf ich Ihnen behilflich sein – vielleicht mit einem Termin?",
+    "Sehr gut, danke! Und wie kann ich Ihnen weiterhelfen?"
+  ],
+  "identitaet_antwort": [
+    "Ich bin der digitale Assistent des Gesundheitszentrums. Ich helfe Ihnen bei Terminen, Öffnungszeiten und Kontaktfragen.",
+    "Ich bin ein Chatbot des Gesundheitszentrums – kein Mensch, aber sehr hilfsbereit! Fragen Sie mich gerne nach Terminen oder Informationen.",
+    "Mein Name ist Gesundheitszentrum-Bot. Ich unterstütze Sie rund um die Uhr bei Terminen und allgemeinen Anfragen."
+  ],
+  "faehigkeiten_antwort": [
+    "Ich kann Ihnen bei diesen Themen helfen: Termin buchen, Termin verschieben, Termin absagen, Öffnungszeiten, Adresse und Kontakt. Was darf es sein?",
+    "Meine Aufgaben: Terminverwaltung (buchen, verschieben, absagen) sowie Auskünfte zu Öffnungszeiten, Adresse und Kontakt. Womit starten wir?",
+    "Ich unterstütze Sie bei Terminen und allgemeinen Informationen rund um das Gesundheitszentrum. Sagen Sie einfach, was Sie brauchen!"
+  ],
+  "lob_antwort": [
+    "Vielen Dank, das freut mich sehr! Kann ich noch etwas für Sie tun?",
+    "Danke für das nette Feedback! Womit darf ich Ihnen weiterhelfen?",
+    "Das höre ich gerne! Gibt es noch etwas, wobei ich helfen kann?"
+  ],
+  "unmut_antwort": [
+    "Das tut mir leid! Ich gebe mein Bestes. Versuchen Sie es bitte mit einer klaren Anfrage, z.B. 'Termin buchen' oder 'Öffnungszeiten'.",
+    "Entschuldigung, wenn ich Sie verwirrt habe. Ich kann bei Terminen, Öffnungszeiten, Adresse und Kontakt helfen – sagen Sie einfach, was Sie brauchen.",
+    "Es tut mir leid, dass es nicht geklappt hat. Bei dringenden Anliegen erreichen Sie unser Team auch telefonisch unter 0991 123456."
+  ],
+  "verabschiedung_antwort": [
+    "Auf Wiedersehen! Ich wünsche Ihnen einen schönen Tag.",
+    "Tschüss! Bleiben Sie gesund.",
+    "Auf Wiedersehen! Bei Fragen stehe ich jederzeit zur Verfügung.",
+    "Bis bald! Ich wünsche Ihnen alles Gute."
+  ],
+  "prozessAbbruch": "Kein Problem, ich habe den Vorgang abgebrochen. Wie kann ich Ihnen sonst helfen?",
+  "abbruchAngebot": "Das konnte ich leider nicht verstehen. Möchten Sie den Vorgang abbrechen?",
+  "slotVorschlag": "Folgende Uhrzeiten sind an diesem Tag noch frei: {slots}. Welche passt Ihnen?",
+  "keineSlotsFrei": "An diesem Tag sind leider keine Termine mehr frei. Bitte wählen Sie ein anderes Datum.",
+  "meineTermine": {
+    "frageName": "Gerne zeige ich Ihnen Ihre Termine. Wie lautet Ihr vollständiger Name?",
+    "keineGefunden": "Ich konnte keine Termine unter diesem Namen finden. Möchten Sie einen neuen Termin buchen?",
+    "listeKopf": "Ich habe folgende Termine für Sie gefunden:"
+  },
+  "zusammenfassung": {
+    "buchung": "Ich habe folgende Angaben notiert:\nFachbereich: {fachbereich}\nName: {name}\nTelefon: {telefon}\nE-Mail: {email}\nDatum: {datum}\nUhrzeit: {uhrzeit}",
+    "verschiebung": "Ich habe folgende Angaben notiert:\nName: {name}\nBisheriger Termin: {altesDatum}\nNeuer Termin: {neuesDatum} um {neueUhrzeit}",
+    "absage": "Ich habe folgende Angaben notiert:\nName: {name}\nTermin zum Absagen: {datum} um {uhrzeit}"
+  },
+  "verlauf": {
+    "buchung": "Sie haben einen Termin ({fachbereich}) am {datum} um {uhrzeit} gebucht.",
+    "verschiebung": "Sie haben Ihren Termin vom {altesDatum} auf den {neuesDatum} um {neueUhrzeit} verschoben.",
+    "absage": "Sie haben Ihren Termin am {datum} um {uhrzeit} abgesagt.",
+    "oeffnungszeiten": "Sie haben nach unseren Öffnungszeiten gefragt.",
+    "adresse": "Sie haben nach unserer Adresse gefragt.",
+    "kontakt": "Sie haben nach unseren Kontaktdaten gefragt."
+  },
+  "verlaufZusammenfassung": {
+    "kopf": "Zur Erinnerung – das haben wir heute besprochen:",
+    "kopfMitName": "Zur Erinnerung, {name} – das haben wir heute besprochen:"
+  },
+  "gegenfrage": "Ich habe Sie nicht ganz verstanden – aber es klingt, als könnten gesundheitliche Beschwerden dahinterstecken. Soll ich Ihnen einen Termin im Fachbereich {fachbereich} vorschlagen? Antworten Sie einfach mit Ja.",
+  "gegenfrageAbgelehnt": "Alles klar, kein Termin. Sagen Sie mir einfach, womit ich Ihnen sonst helfen kann – zum Beispiel Öffnungszeiten, Adresse oder Kontakt.",
+  "prozessHinweise": {
+    "fachbereich": "Bitte nennen Sie mir den gewünschten Fachbereich, zum Beispiel Allgemeinmedizin oder Dermatologie.",
+    "name": "Bitte teilen Sie mir jetzt Ihren vollständigen Namen mit.",
+    "telefon": "Bitte nennen Sie Ihre Telefonnummer.",
+    "email": "Bitte nennen Sie Ihre E-Mail-Adresse.",
+    "datum": "Bitte nennen Sie das gewünschte Datum für Ihren Termin.",
+    "uhrzeit": "Bitte nennen Sie Ihre bevorzugte Uhrzeit.",
+    "bestaetigung": "Bitte bestätigen Sie die Angaben mit Ja oder Nein.",
+    "altesDatum": "Bitte nennen Sie das Datum Ihres bestehenden Termins.",
+    "neuesDatum": "Bitte nennen Sie das gewünschte neue Datum.",
+    "neueUhrzeit": "Bitte nennen Sie die gewünschte neue Uhrzeit.",
+    "allgemein": "Bitte bleiben Sie beim aktuellen Schritt, damit ich Ihren Termin vollständig aufnehmen kann."
+  }
+}
