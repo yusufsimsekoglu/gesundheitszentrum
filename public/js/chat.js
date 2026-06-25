@@ -126,6 +126,7 @@ socket.on("bot-nachricht", (daten) => {
   const text = typeof daten === "string" ? daten : daten.text;
   const vorschlaege = typeof daten === "object" ? daten.vorschlaege : null;
 
-  nachrichtHinzufuegen(text, "bot");
+  // Leeren Text nicht als Blase anzeigen (Bot schweigt, nur Buttons bleiben)
+  if (text && text.trim()) nachrichtHinzufuegen(text, "bot");
   vorschlaegeAnzeigen(vorschlaege);
 });

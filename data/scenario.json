@@ -26,10 +26,11 @@
     { "woerter": ["kopfschmerz", "migrane", "schwindel", "taubheit", "kribbeln"], "fachbereich": "Neurologie" },
     { "woerter": ["kind", "baby", "saugling", "impfung", "kinderarzt"], "fachbereich": "Pädiatrie" },
     { "woerter": ["auge", "sehen", "brille", "sehkraft", "verschwommen"], "fachbereich": "Augenheilkunde" },
-    { "woerter": ["schmerz", "krank", "weh", "beschwerden", "symptom", "fieber", "husten", "erkaltung", "grippe", "unwohl"], "fachbereich": "Allgemeinmedizin" }
+    { "woerter": ["schmerz", "krank", "weh", "beschwerden", "symptom", "fieber", "husten", "erkaltung", "grippe", "unwohl", "nicht gut", "geht es schlecht", "geht schlecht", "mir ist schlecht", "elend", "ubel", "schwach", "mude", "erschopft", "kaputt", "miserabel"], "fachbereich": "Allgemeinmedizin" }
   ],
   "vorschlaege": {
     "standard": ["Termin buchen", "Termin verschieben", "Termin absagen", "Öffnungszeiten", "Adresse"],
+    "aktionen": ["Termin buchen", "Termin verschieben", "Termin absagen"],
     "bestaetigung": ["Ja", "Nein"],
     "abbruchAngebot": ["Ja, abbrechen", "Nein, weiter"],
     "fachbereich": ["Allgemeinmedizin", "Kardiologie", "Orthopädie", "Dermatologie"],
@@ -45,7 +46,7 @@
     { "intent": "oeffnungszeiten", "eine": ["öffnungszeit", "oeffnungszeit", "geöffnet", "geoeffnet", "sprechzeit", "wann offen", "wann auf", "wie lange auf", "wie lange offen", "aufmachen", "zumachen", "geschlossen"] },
     { "intent": "oeffnungszeiten", "alle": ["wann"], "eine": ["offen", "auf", "zu"] },
     { "intent": "adresse", "eine": ["adresse", "standort", "anschrift", "anfahrt", "gelegen", "finde ich sie", "finde ich euch", "komme ich zu ihnen", "straße", "strasse", "hausnummer"] },
-    { "intent": "kontakt", "eine": ["kontakt", "anrufen", "e-mail", "email", "mail", "telefonnummer", "durchwahl", "erreichen", "hotline", "telefonisch", "rufnummer", "faxnummer"] },
+    { "intent": "kontakt", "eine": ["kontakt", "anrufen", "e-mail", "email", "mail", "telefonnummer", "durchwahl", "erreich", "hotline", "telefonisch", "rufnummer", "faxnummer"] },
     { "intent": "adresse", "eine": ["wo"] },
     { "intent": "Begruessung", "eine": ["hallo", "hi", "hey", "guten morgen", "guten tag", "guten abend", "servus", "moin", "grüß gott", "gruess gott", "grüezi", "grias di", "habe die ehre", "tach", "mahlzeit", "salü", "salue", "na"] },
     { "intent": "Danke", "eine": ["danke", "dankeschön", "dankeschoen", "vielen dank", "merci", "besten dank", "tausend dank", "vergelt"] },

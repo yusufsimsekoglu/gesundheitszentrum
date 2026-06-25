@@ -854,9 +854,13 @@ class BotController {
 
   holeErweitertenFallback(socketId) {
     const fallbackZaehler = this.sessionMemory.erhoeheFallbackZaehler(socketId);
+    const aktionen = scenario.vorschlaege.aktionen;
 
-    if (fallbackZaehler >= 3) return this.responses.erweiterterFallback.stufe3;
-    if (fallbackZaehler === 2) return this.responses.erweiterterFallback.stufe2;
+    // Nach mehreren erfolglosen Eingaben hört der Bot auf zu schreiben
+    // und zeigt nur noch die Aktions-Buttons an.
+    if (fallbackZaehler >= 4) return { text: "", vorschlaege: aktionen };
+    if (fallbackZaehler === 3) return { text: this.responses.erweiterterFallback.stufe3, vorschlaege: aktionen };
+    if (fallbackZaehler === 2) return { text: this.responses.erweiterterFallback.stufe2, vorschlaege: aktionen };
 
     return this.zufaelligeAntwort(this.responses.fallback);
   }
@@ -868,8 +872,9 @@ class BotController {
 
     if (istWiederholung) {
       const prefix = this.zufaelligeAntwort(this.responses.wiederholung);
-      if (antwort && typeof antwort === "object" && antwort.text) {
-        return { ...antwort, text: `${prefix}\n${antwort.text}` };
+      if (antwort && typeof antwort === "object") {
+        // Leeren Text (Bot schweigt) nicht mit dem Wiederholungs-Prefix füllen
+        return { ...antwort, text: antwort.text ? `${prefix}\n${antwort.text}` : antwort.text };
       }
       return `${prefix}\n${antwort}`;
     }
@@ -916,6 +921,24 @@ class BotController {
       } else {
         this.sessionMemory.beendeProzess(socketId);
         return this.responses.prozessAbbruch;
+      }
+    }
+
+    // Während eines laufenden Vorgangs: Verabschiedung oder Wechsel zu einem
+    // anderen Anliegen zulassen. Schritte mit persönlichen Daten und die
+    // Bestätigung bleiben geschützt, damit Eingaben nicht fehlgedeutet werden.
+    if (sitzung.aktuellerProzess) {
+      const geschuetzteSchritte = ["name", "telefon", "email", "email_code", "bestaetigung"];
+      if (!geschuetzteSchritte.includes(sitzung.aktuellerSchritt)) {
+        const wsIntent = this.erkenneIntent(nachricht);
+        const wechselIntents = [
+          "Verabschiedung", "termin_buchen", "termin_verschieben",
+          "termin_absagen", "meine_termine", "oeffnungszeiten", "adresse", "kontakt"
+        ];
+        if (wechselIntents.includes(wsIntent)) {
+          this.sessionMemory.beendeProzess(socketId);
+          return await this.verarbeiteNachrichtKern(socketId, nachricht);
+        }
       }
     }
 
@@ -975,6 +998,14 @@ class BotController {
     // CLU nichts erkannt -> Word-Spotting
     if (intent === "fallback" || intent === "None") {
       intent = this.erkenneIntent(nachricht);
+    }
+
+    // Gesundheitliche Beschwerden haben Vorrang: Erkennt das Word-Spotting kein
+    // klares Anliegen (auch wenn CLU etwas Falsches geliefert hat), lenkt eine
+    // genannte Beschwerde gezielt zur passenden Terminbuchung.
+    if (!this.istAllgemeineIntentNachricht(this.erkenneIntent(nachricht))) {
+      const gegenfrage = this.holeGegenfrage(socketId, nachricht);
+      if (gegenfrage) return gegenfrage;
     }
 
     switch (intent) {

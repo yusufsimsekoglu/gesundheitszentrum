@@ -59,9 +59,9 @@ io.on("connection", (socket) => {
     socket.emit("bot-yaziyor");
     const antwort = await botController.verarbeiteNachricht(socket.id, nachricht);
 
-    if (antwort && typeof antwort === "object" && antwort.text) {
+    if (antwort && typeof antwort === "object") {
       socket.emit("bot-nachricht", {
-        text: antwort.text,
+        text: antwort.text ?? "",
         vorschlaege: antwort.vorschlaege || holeVorschlaege(socket.id)
       });
     } else {
